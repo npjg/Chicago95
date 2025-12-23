@@ -1,7 +1,7 @@
 /* Whisker Menu and Application Menu Panel Button style */
 
-/* We will remove the border effect and margin effects on the button and apply it to the box inside. 
-This will allow people to be able to run their pointer to the far corner of the screen and activate 
+/* We will remove the border effect and margin effects on the button and apply it to the box inside.
+This will allow people to be able to run their pointer to the far corner of the screen and activate
 the whisker menu without having to correct their pointer location. */
 #whiskermenu-button,
 #applicationmenu-button {
@@ -86,7 +86,7 @@ the whisker menu without having to correct their pointer location. */
       color: @text_color;
       /*background-image: linear-gradient(to right, @selected_bg_color, @transparent);*/ /* Note: You can setup a gradient here if you want! */ }
   #whiskermenu-window frame {
-/* 
+/*
    These are the Whisker Menu side bar images to replicate Windows 95.
    comment branding_C95.png and uncomment which one you would prefer to use:
     - w95: Replicated version of the original in a higher resolution
@@ -95,7 +95,7 @@ the whisker menu without having to correct their pointer location. */
     - L95_aliased: A linux version with aliased font style.
     - C95: A Chicago95 version of this theme.
     - C95_aliased: A Chicago95 version with aliased font style.
-   If none of these catch your fancy edit misc/whisker-sidebar.svg in 
+   If none of these catch your fancy edit misc/whisker-sidebar.svg in
    Inkscape
 */
 /*    background-image: url("../assets/branding_W95.png"); */
@@ -134,3 +134,6 @@ the whisker menu without having to correct their pointer location. */
     box-shadow: none; }
   #whiskermenu-window frame, #whiskermenu-window GtkListBox, #whiskermenu-window scrolledwindow, #whiskermenu-window viewport {
     background-color: transparent; }
+  /* Fix category scrollbar overlap */
+  #whiskermenu-window .categories .category-button {
+    padding-right: 120px; }
