@@ -13,6 +13,7 @@ $ mv /etc/fonts/conf.d/70-no-bitmaps.conf /etc/fonts/conf.d/70-no-bitmaps.conf.b
 - Click Fonts tab and select Helvetica Regular. Set to size 8.
 - Enable anti-aliasing and set hinting to "Full."
 
+If you want to change window titles too, then open Settings Manager > Window Manager and change "Title font" to "Helvetica Bold 8" (or your preferred size)
 
 !! Start Button
 
