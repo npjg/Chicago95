@@ -696,6 +696,8 @@ Make GTK icons bigger
 
     xfconf-query -c xsettings -p /Gtk/IconSizes -s "gtk-large-toolbar=32,32:gtk-small-toolbar=24,24:gtk-menu=32,32:gtk-dialog=88,88:gtk-button=32,32:gtk-dnd=32,32"
 
+    (If this needs to be reverted later, you can remove the property entirely with `xfconf-query -c xsettings -p /Gtk/IconSizes -r`.)
+
 Increase icon size in Thunar File Manager
 
     xfconf-query -c thunar -p /shortcuts-icon-size -s "THUNAR_ICON_SIZE_SMALL"
