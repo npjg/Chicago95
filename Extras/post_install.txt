@@ -15,6 +15,56 @@ $ mv /etc/fonts/conf.d/70-no-bitmaps.conf /etc/fonts/conf.d/70-no-bitmaps.conf.b
 
 If you want to change window titles too, then open Settings Manager > Window Manager and change "Title font" to "Helvetica Bold 8" (or your preferred size)
 
+!! Disable thumbnails
+If you want to disable thumbnails for office documents and such while keeping them present when useful (like for picture files), you can put the following in ~/.config/tumbler/tumbler.rc:
+```
+  [DesktopThumbnailer]
+  Disabled=true
+
+  [GstThumbnailer]
+  Disabled=false
+
+  [OdfThumbnailer]
+  Disabled=true
+
+  [OfficeThumbnailer]
+  Disabled=true
+
+  [PoplerThumbnailer]
+  Disabled=false
+
+  [RawThumbnailer]
+  Disabled=false
+
+  [JpegThumbnailer]
+  Disabled=false
+
+  [PixbufThumbnailer]
+  Disabled=false
+
+  [FfmpegThumbnailer]
+  Disabled=false
+```
+
+!! My Computer shortcut
+You can create a `~/Desktop/Computer.desktop` with the following:
+
+```
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=My Computer
+Comment=Browse all drives and devices
+Icon=computer
+Exec=thunar computer:///
+Terminal=false
+StartupNotify=true
+Categories=System;FileTools;
+Path=
+```
+
+TODO: Figure out how to automatically organize the desktop to put My Computer first, then Home (My Documents).
+
 !! Start Button
 
 Open the XFCE settings manager > Panel > Items tab > Double click the Whisker / Application menu item in the item list; alternatively you can also access their settings menu by right clicking the icon from the panelbar and selecting "properties."
